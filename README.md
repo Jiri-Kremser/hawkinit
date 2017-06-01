@@ -93,3 +93,6 @@ Running 'docker-compose up --force-recreate' in directory: /tmp/tmp-11573k3ujXFL
 ```
 
 If you navigate to `/tmp/tmp-11573k3ujXFLACh9z`, you can run `docker-dompose up` to start it again. This is not a standard use-case, though. Any other `docker-compose` command works just fine. So for instance you may want to see only the Cassandra logs by `docker-compose logs -f myCassandra` or inspecting the Hawkular Services container by `docker-compose exec hawkular /bin/bash`, etc. Also, nothing protects you from editing the `docker-compose.yml` file that was created in that tmp directory.
+
+TIP: 
+> for any other strange docker errors, I suggest doing a cleanup (https://gist.github.com/Jiri-Kremser/2c830e9103d22a5502da745b4ac1bb37)
